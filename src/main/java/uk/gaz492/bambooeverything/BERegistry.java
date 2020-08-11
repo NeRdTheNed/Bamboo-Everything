@@ -74,7 +74,7 @@ public class BERegistry {
         FuelRegistry.INSTANCE.add(bambooStairsItem, 300);
         
         //Ladder
-        this.bambooLadderBlock = this.blockRegister("bamboo_ladder", new BambooLadderBlock(FabricBlockSettings.of(Material.BAMBOO).strength(0.4F,0.4F).sounds(BlockSoundGroup.LADDER).nonOpaque()));
+        this.bambooLadderBlock = this.blockRegister("bamboo_ladder", new BambooLadderBlock(FabricBlockSettings.of(Material.WOOD).strength(0.4F,0.4F).sounds(BlockSoundGroup.LADDER).nonOpaque()));
         this.bambooLadderItem = this.itemRegister("bamboo_ladder", this.bambooLadderBlock, this.defaultSettings);
         FuelRegistry.INSTANCE.add(bambooLadderItem, 300);
         
@@ -88,11 +88,11 @@ public class BERegistry {
         FuelRegistry.INSTANCE.add(bambooFenceGateItem, 300);
         
         //Door
-        this.bambooDoorBlock = this.blockRegister("bamboo_door", new BambooDoorBlock(FabricBlockSettings.of(Material.BAMBOO).strength(3.0F, 3.0F).sounds(BlockSoundGroup.BAMBOO)));
+        this.bambooDoorBlock = this.blockRegister("bamboo_door", new BambooDoorBlock(FabricBlockSettings.of(Material.WOOD).strength(3.0F, 3.0F).sounds(BlockSoundGroup.BAMBOO)));
         this.bambooDoorItem = this.itemRegister("bamboo_door", this.bambooDoorBlock, this.defaultSettings);
         FuelRegistry.INSTANCE.add(bambooDoorItem, 200);
         
-        this.bambooTrapDoorBlock = this.blockRegister("bamboo_trapdoor", new BambooTrapDoorBlock(FabricBlockSettings.of(Material.BAMBOO).strength(3.0F, 3.0F).sounds(BlockSoundGroup.BAMBOO)));
+        this.bambooTrapDoorBlock = this.blockRegister("bamboo_trapdoor", new BambooTrapDoorBlock(FabricBlockSettings.of(Material.WOOD).strength(3.0F, 3.0F).sounds(BlockSoundGroup.BAMBOO)));
         this.bambooTrapDoorItem = this.itemRegister("bamboo_trapdoor", this.bambooTrapDoorBlock, this.defaultSettings);
         FuelRegistry.INSTANCE.add(bambooTrapDoorItem, 300);
     }
